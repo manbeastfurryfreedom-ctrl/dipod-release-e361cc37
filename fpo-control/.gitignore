@@ -1,0 +1,23 @@
+thirdparty
+IsaacLab/_isaac_sim
+.env_setup_finished
+logs/
+outputs/
+wandb/
+__pycache__/
+.ipynb_checkpoints
+motion.npz
+whole_body_tracking_reference_data/*.npz
+.claude
+wandb_runs/
+.DS_STORE
+# Fallback dependency checkouts created by setup_env.sh in embedded repos.
+IsaacLab/
+whole_body_tracking/
+
+# Self-distillation experiment outputs
+experiments/self_distillation/logs*/
+experiments/self_distillation/plots*/
+experiments/self_distillation/manifest*.json
+experiments/self_distillation/*.log
+isaaclab_fpo/*.egg-info/

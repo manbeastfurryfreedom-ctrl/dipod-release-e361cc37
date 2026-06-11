@@ -1,0 +1,919 @@
+Python version: Python 3.10.19
+PyTorch installation check:
+PyTorch version: 2.6.0+cu124
+/home/haozhe/miniconda3/envs/d1/bin/torchrun
+Using random main_process_port: 32622
+Using GPUs: 0,1,2,3,4,5,6,7 (nproc_per_node=8)
+SLURM Job ID: 573
+Node: gpu-dp-blckj-w9ngn
+Running evaluation on gsm8k with gen_length=256, batch_size=8
+W0129 01:57:17.432000 2664337 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] 
+W0129 01:57:17.432000 2664337 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] *****************************************
+W0129 01:57:17.432000 2664337 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0129 01:57:17.432000 2664337 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] *****************************************
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+E0129 01:57:17.561000 2664337 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 2) local_rank: 0 (pid: 2664339) of binary: /home/haozhe/miniconda3/envs/d1/bin/python
+Traceback (most recent call last):
+  File "/home/haozhe/miniconda3/envs/d1/bin/torchrun", line 7, in <module>
+    sys.exit(main())
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+../eval.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-01-29_01:57:17
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 1 (local_rank: 1)
+  exitcode  : 2 (pid: 2664340)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-01-29_01:57:17
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 2 (local_rank: 2)
+  exitcode  : 2 (pid: 2664341)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-01-29_01:57:17
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 3 (local_rank: 3)
+  exitcode  : 2 (pid: 2664342)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-01-29_01:57:17
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 4 (local_rank: 4)
+  exitcode  : 2 (pid: 2664343)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-01-29_01:57:17
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 5 (local_rank: 5)
+  exitcode  : 2 (pid: 2664344)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-01-29_01:57:17
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 6 (local_rank: 6)
+  exitcode  : 2 (pid: 2664345)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-01-29_01:57:17
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 7 (local_rank: 7)
+  exitcode  : 2 (pid: 2664346)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-01-29_01:57:17
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 0 (local_rank: 0)
+  exitcode  : 2 (pid: 2664339)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+Running evaluation on gsm8k with gen_length=256, batch_size=8
+W0129 01:57:19.229000 2664347 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] 
+W0129 01:57:19.229000 2664347 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] *****************************************
+W0129 01:57:19.229000 2664347 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0129 01:57:19.229000 2664347 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] *****************************************
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+E0129 01:57:19.344000 2664347 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 2) local_rank: 0 (pid: 2664349) of binary: /home/haozhe/miniconda3/envs/d1/bin/python
+Traceback (most recent call last):
+  File "/home/haozhe/miniconda3/envs/d1/bin/torchrun", line 7, in <module>
+    sys.exit(main())
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+../eval.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-01-29_01:57:19
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 1 (local_rank: 1)
+  exitcode  : 2 (pid: 2664350)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-01-29_01:57:19
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 2 (local_rank: 2)
+  exitcode  : 2 (pid: 2664351)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-01-29_01:57:19
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 3 (local_rank: 3)
+  exitcode  : 2 (pid: 2664352)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-01-29_01:57:19
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 4 (local_rank: 4)
+  exitcode  : 2 (pid: 2664353)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-01-29_01:57:19
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 5 (local_rank: 5)
+  exitcode  : 2 (pid: 2664354)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-01-29_01:57:19
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 6 (local_rank: 6)
+  exitcode  : 2 (pid: 2664355)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-01-29_01:57:19
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 7 (local_rank: 7)
+  exitcode  : 2 (pid: 2664356)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-01-29_01:57:19
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 0 (local_rank: 0)
+  exitcode  : 2 (pid: 2664349)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+Running evaluation on gsm8k with gen_length=256, batch_size=8
+W0129 01:57:21.065000 2664358 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] 
+W0129 01:57:21.065000 2664358 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] *****************************************
+W0129 01:57:21.065000 2664358 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0129 01:57:21.065000 2664358 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] *****************************************
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+E0129 01:57:21.183000 2664358 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 2) local_rank: 0 (pid: 2664360) of binary: /home/haozhe/miniconda3/envs/d1/bin/python
+Traceback (most recent call last):
+  File "/home/haozhe/miniconda3/envs/d1/bin/torchrun", line 7, in <module>
+    sys.exit(main())
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+../eval.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-01-29_01:57:21
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 1 (local_rank: 1)
+  exitcode  : 2 (pid: 2664361)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-01-29_01:57:21
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 2 (local_rank: 2)
+  exitcode  : 2 (pid: 2664362)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-01-29_01:57:21
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 3 (local_rank: 3)
+  exitcode  : 2 (pid: 2664363)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-01-29_01:57:21
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 4 (local_rank: 4)
+  exitcode  : 2 (pid: 2664364)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-01-29_01:57:21
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 5 (local_rank: 5)
+  exitcode  : 2 (pid: 2664365)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-01-29_01:57:21
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 6 (local_rank: 6)
+  exitcode  : 2 (pid: 2664366)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-01-29_01:57:21
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 7 (local_rank: 7)
+  exitcode  : 2 (pid: 2664367)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-01-29_01:57:21
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 0 (local_rank: 0)
+  exitcode  : 2 (pid: 2664360)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+Running evaluation on gsm8k with gen_length=256, batch_size=8
+W0129 01:57:22.882000 2664368 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] 
+W0129 01:57:22.882000 2664368 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] *****************************************
+W0129 01:57:22.882000 2664368 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0129 01:57:22.882000 2664368 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] *****************************************
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+E0129 01:57:22.998000 2664368 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 2) local_rank: 0 (pid: 2664379) of binary: /home/haozhe/miniconda3/envs/d1/bin/python
+Traceback (most recent call last):
+  File "/home/haozhe/miniconda3/envs/d1/bin/torchrun", line 7, in <module>
+    sys.exit(main())
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+../eval.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-01-29_01:57:22
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 1 (local_rank: 1)
+  exitcode  : 2 (pid: 2664380)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-01-29_01:57:22
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 2 (local_rank: 2)
+  exitcode  : 2 (pid: 2664381)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-01-29_01:57:22
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 3 (local_rank: 3)
+  exitcode  : 2 (pid: 2664382)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-01-29_01:57:22
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 4 (local_rank: 4)
+  exitcode  : 2 (pid: 2664383)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-01-29_01:57:22
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 5 (local_rank: 5)
+  exitcode  : 2 (pid: 2664384)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-01-29_01:57:22
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 6 (local_rank: 6)
+  exitcode  : 2 (pid: 2664385)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-01-29_01:57:22
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 7 (local_rank: 7)
+  exitcode  : 2 (pid: 2664386)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-01-29_01:57:22
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 0 (local_rank: 0)
+  exitcode  : 2 (pid: 2664379)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+Running evaluation on gsm8k with gen_length=256, batch_size=8
+W0129 01:57:24.672000 2664387 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] 
+W0129 01:57:24.672000 2664387 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] *****************************************
+W0129 01:57:24.672000 2664387 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0129 01:57:24.672000 2664387 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] *****************************************
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+E0129 01:57:24.788000 2664387 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 2) local_rank: 0 (pid: 2664390) of binary: /home/haozhe/miniconda3/envs/d1/bin/python
+Traceback (most recent call last):
+  File "/home/haozhe/miniconda3/envs/d1/bin/torchrun", line 7, in <module>
+    sys.exit(main())
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+../eval.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-01-29_01:57:24
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 1 (local_rank: 1)
+  exitcode  : 2 (pid: 2664391)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-01-29_01:57:24
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 2 (local_rank: 2)
+  exitcode  : 2 (pid: 2664392)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-01-29_01:57:24
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 3 (local_rank: 3)
+  exitcode  : 2 (pid: 2664393)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-01-29_01:57:24
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 4 (local_rank: 4)
+  exitcode  : 2 (pid: 2664394)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-01-29_01:57:24
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 5 (local_rank: 5)
+  exitcode  : 2 (pid: 2664395)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-01-29_01:57:24
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 6 (local_rank: 6)
+  exitcode  : 2 (pid: 2664396)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-01-29_01:57:24
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 7 (local_rank: 7)
+  exitcode  : 2 (pid: 2664397)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-01-29_01:57:24
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 0 (local_rank: 0)
+  exitcode  : 2 (pid: 2664390)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+Running evaluation on gsm8k with gen_length=256, batch_size=8
+W0129 01:57:26.479000 2664398 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] 
+W0129 01:57:26.479000 2664398 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] *****************************************
+W0129 01:57:26.479000 2664398 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0129 01:57:26.479000 2664398 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] *****************************************
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+E0129 01:57:26.595000 2664398 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 2) local_rank: 0 (pid: 2664400) of binary: /home/haozhe/miniconda3/envs/d1/bin/python
+Traceback (most recent call last):
+  File "/home/haozhe/miniconda3/envs/d1/bin/torchrun", line 7, in <module>
+    sys.exit(main())
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+../eval.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-01-29_01:57:26
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 1 (local_rank: 1)
+  exitcode  : 2 (pid: 2664401)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-01-29_01:57:26
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 2 (local_rank: 2)
+  exitcode  : 2 (pid: 2664402)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-01-29_01:57:26
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 3 (local_rank: 3)
+  exitcode  : 2 (pid: 2664403)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-01-29_01:57:26
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 4 (local_rank: 4)
+  exitcode  : 2 (pid: 2664404)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-01-29_01:57:26
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 5 (local_rank: 5)
+  exitcode  : 2 (pid: 2664405)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-01-29_01:57:26
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 6 (local_rank: 6)
+  exitcode  : 2 (pid: 2664406)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-01-29_01:57:26
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 7 (local_rank: 7)
+  exitcode  : 2 (pid: 2664407)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-01-29_01:57:26
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 0 (local_rank: 0)
+  exitcode  : 2 (pid: 2664400)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+Running evaluation on gsm8k with gen_length=256, batch_size=8
+W0129 01:57:28.318000 2664408 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] 
+W0129 01:57:28.318000 2664408 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] *****************************************
+W0129 01:57:28.318000 2664408 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0129 01:57:28.318000 2664408 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] *****************************************
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+E0129 01:57:28.435000 2664408 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 2) local_rank: 0 (pid: 2664410) of binary: /home/haozhe/miniconda3/envs/d1/bin/python
+Traceback (most recent call last):
+  File "/home/haozhe/miniconda3/envs/d1/bin/torchrun", line 7, in <module>
+    sys.exit(main())
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+../eval.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-01-29_01:57:28
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 1 (local_rank: 1)
+  exitcode  : 2 (pid: 2664411)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-01-29_01:57:28
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 2 (local_rank: 2)
+  exitcode  : 2 (pid: 2664412)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-01-29_01:57:28
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 3 (local_rank: 3)
+  exitcode  : 2 (pid: 2664413)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-01-29_01:57:28
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 4 (local_rank: 4)
+  exitcode  : 2 (pid: 2664414)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-01-29_01:57:28
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 5 (local_rank: 5)
+  exitcode  : 2 (pid: 2664415)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-01-29_01:57:28
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 6 (local_rank: 6)
+  exitcode  : 2 (pid: 2664416)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-01-29_01:57:28
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 7 (local_rank: 7)
+  exitcode  : 2 (pid: 2664417)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-01-29_01:57:28
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 0 (local_rank: 0)
+  exitcode  : 2 (pid: 2664410)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+Running evaluation on gsm8k with gen_length=256, batch_size=8
+W0129 01:57:30.107000 2664418 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] 
+W0129 01:57:30.107000 2664418 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] *****************************************
+W0129 01:57:30.107000 2664418 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0129 01:57:30.107000 2664418 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] *****************************************
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+E0129 01:57:30.223000 2664418 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 2) local_rank: 0 (pid: 2664421) of binary: /home/haozhe/miniconda3/envs/d1/bin/python
+Traceback (most recent call last):
+  File "/home/haozhe/miniconda3/envs/d1/bin/torchrun", line 7, in <module>
+    sys.exit(main())
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+../eval.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-01-29_01:57:30
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 1 (local_rank: 1)
+  exitcode  : 2 (pid: 2664422)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-01-29_01:57:30
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 2 (local_rank: 2)
+  exitcode  : 2 (pid: 2664423)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-01-29_01:57:30
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 3 (local_rank: 3)
+  exitcode  : 2 (pid: 2664424)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-01-29_01:57:30
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 4 (local_rank: 4)
+  exitcode  : 2 (pid: 2664425)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-01-29_01:57:30
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 5 (local_rank: 5)
+  exitcode  : 2 (pid: 2664426)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-01-29_01:57:30
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 6 (local_rank: 6)
+  exitcode  : 2 (pid: 2664427)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-01-29_01:57:30
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 7 (local_rank: 7)
+  exitcode  : 2 (pid: 2664428)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-01-29_01:57:30
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 0 (local_rank: 0)
+  exitcode  : 2 (pid: 2664421)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+Running evaluation on gsm8k with gen_length=256, batch_size=8
+W0129 01:57:31.913000 2664429 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] 
+W0129 01:57:31.913000 2664429 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] *****************************************
+W0129 01:57:31.913000 2664429 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0129 01:57:31.913000 2664429 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] *****************************************
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+E0129 01:57:32.028000 2664429 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 2) local_rank: 0 (pid: 2664431) of binary: /home/haozhe/miniconda3/envs/d1/bin/python
+Traceback (most recent call last):
+  File "/home/haozhe/miniconda3/envs/d1/bin/torchrun", line 7, in <module>
+    sys.exit(main())
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+../eval.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-01-29_01:57:32
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 1 (local_rank: 1)
+  exitcode  : 2 (pid: 2664432)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-01-29_01:57:32
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 2 (local_rank: 2)
+  exitcode  : 2 (pid: 2664433)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-01-29_01:57:32
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 3 (local_rank: 3)
+  exitcode  : 2 (pid: 2664434)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-01-29_01:57:32
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 4 (local_rank: 4)
+  exitcode  : 2 (pid: 2664435)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-01-29_01:57:32
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 5 (local_rank: 5)
+  exitcode  : 2 (pid: 2664436)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-01-29_01:57:32
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 6 (local_rank: 6)
+  exitcode  : 2 (pid: 2664437)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-01-29_01:57:32
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 7 (local_rank: 7)
+  exitcode  : 2 (pid: 2664438)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-01-29_01:57:32
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 0 (local_rank: 0)
+  exitcode  : 2 (pid: 2664431)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+Running evaluation on gsm8k with gen_length=256, batch_size=8
+W0129 01:57:33.742000 2664448 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] 
+W0129 01:57:33.742000 2664448 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] *****************************************
+W0129 01:57:33.742000 2664448 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0129 01:57:33.742000 2664448 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py:792] *****************************************
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+/home/haozhe/miniconda3/envs/d1/bin/python: can't open file '/data/home/haozhe/d1/eval/../eval.py': [Errno 2] No such file or directory
+E0129 01:57:33.856000 2664448 /data/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 2) local_rank: 0 (pid: 2664450) of binary: /home/haozhe/miniconda3/envs/d1/bin/python
+Traceback (most recent call last):
+  File "/home/haozhe/miniconda3/envs/d1/bin/torchrun", line 7, in <module>
+    sys.exit(main())
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/haozhe/miniconda3/envs/d1/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+../eval.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-01-29_01:57:33
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 1 (local_rank: 1)
+  exitcode  : 2 (pid: 2664451)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-01-29_01:57:33
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 2 (local_rank: 2)
+  exitcode  : 2 (pid: 2664452)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-01-29_01:57:33
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 3 (local_rank: 3)
+  exitcode  : 2 (pid: 2664453)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-01-29_01:57:33
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 4 (local_rank: 4)
+  exitcode  : 2 (pid: 2664454)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-01-29_01:57:33
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 5 (local_rank: 5)
+  exitcode  : 2 (pid: 2664455)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-01-29_01:57:33
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 6 (local_rank: 6)
+  exitcode  : 2 (pid: 2664456)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-01-29_01:57:33
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 7 (local_rank: 7)
+  exitcode  : 2 (pid: 2664457)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-01-29_01:57:33
+  host      : gpu-dp-blckj-w9ngn.slurm-compute.slurm.svc.cluster.local
+  rank      : 0 (local_rank: 0)
+  exitcode  : 2 (pid: 2664450)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+All evaluations completed!
