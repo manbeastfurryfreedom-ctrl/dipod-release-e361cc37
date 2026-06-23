@@ -103,3 +103,24 @@ def mean_gap(theta):
     p = true_probs(theta)
     z = sum(p.values())
     return sum(p[s] * g[s] for s in SEQS) / z
+
+
+# --------------------------------------------------------------------------- #
+#  Exact gradients (finite differences over the 6-parameter table)
+# --------------------------------------------------------------------------- #
+def grad_seq(fn_per_seq, theta, seq, h=1e-6):
+    """Exact central-difference gradient of fn_per_seq(theta)[seq] wrt theta."""
+    g = np.zeros_like(theta)
+    for i in range(theta.size):
+        tp = theta.copy(); tp[i] += h
+        tm = theta.copy(); tm[i] -= h
+        g[i] = (fn_per_seq(tp)[seq] - fn_per_seq(tm)[seq]) / (2 * h)
+    return g
+
+
+def grad_elbo_seq(theta, seq):
+    return grad_seq(elbo_all, theta, seq)
+
+
+def grad_logpi_seq(theta, seq):
+    return grad_seq(true_logprobs, theta, seq)
