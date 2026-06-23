@@ -83,8 +83,8 @@ if robust is not None:
     fpo_rows = by_beta.get(0.0, [])
     dipod_rows = by_beta.get(0.2, [])
     n = len(fpo_rows)
-    frac_dipod_lower_gap = mean(1 for a, b in zip(fpo_rows, dipod_rows) if b["final_gap_AA"] < a["final_gap_AA"]) if fpo_rows else 0.0
-    frac_dipod_higher_align = mean(1 for a, b in zip(fpo_rows, dipod_rows) if b["final_align"] > a["final_align"]) if fpo_rows else 0.0
+    frac_dipod_lower_gap = (sum(1 for a, b in zip(fpo_rows, dipod_rows) if b["final_gap_AA"] < a["final_gap_AA"]) / len(fpo_rows)) if fpo_rows else 0.0
+    frac_dipod_higher_align = (sum(1 for a, b in zip(fpo_rows, dipod_rows) if b["final_align"] > a["final_align"]) / len(fpo_rows)) if fpo_rows else 0.0
     L.append(f"Across **{n} random reward tables** (uniform draws over the 4 "
              f"sequences), FPO vs FPO+DiPOD (beta=0.2):\n")
     L.append("| metric | FPO mean | DiPOD mean |")
