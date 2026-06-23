@@ -1,0 +1,42 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg">
+<text x="380.0" y="22" text-anchor="middle" font-size="14" font-weight="600" fill="#333">beta vs alignment [mean +/- std]</text>
+<line x1="56" y1="364" x2="704" y2="364" stroke="#555" stroke-width="1.5"/>
+<line x1="56" y1="56" x2="56" y2="364" stroke="#555" stroke-width="1.5"/>
+<text x="48" y="368.0" text-anchor="end" font-size="11" fill="#666">0.000</text>
+<line x1="56" y1="364.0" x2="704" y2="364.0" stroke="#eee" stroke-width="1"/>
+<text x="48" y="291.0" text-anchor="end" font-size="11" fill="#666">0.273</text>
+<line x1="56" y1="287.0" x2="704" y2="287.0" stroke="#eee" stroke-width="1"/>
+<text x="48" y="214.0" text-anchor="end" font-size="11" fill="#666">0.546</text>
+<line x1="56" y1="210.0" x2="704" y2="210.0" stroke="#eee" stroke-width="1"/>
+<text x="48" y="137.0" text-anchor="end" font-size="11" fill="#666">0.819</text>
+<line x1="56" y1="133.0" x2="704" y2="133.0" stroke="#eee" stroke-width="1"/>
+<text x="48" y="60.0" text-anchor="end" font-size="11" fill="#666">1.093</text>
+<line x1="56" y1="56.0" x2="704" y2="56.0" stroke="#eee" stroke-width="1"/>
+<text x="56.0" y="382" text-anchor="middle" font-size="11" fill="#666">0</text>
+<text x="114.9090909090909" y="382" text-anchor="middle" font-size="11" fill="#666">0.05</text>
+<text x="173.8181818181818" y="382" text-anchor="middle" font-size="11" fill="#666">0.1</text>
+<text x="291.6363636363636" y="382" text-anchor="middle" font-size="11" fill="#666">0.2</text>
+<text x="645.0909090909091" y="382" text-anchor="middle" font-size="11" fill="#666">0.5</text>
+<line x1="56.0" y1="158.44801761241018" x2="56.0" y2="109.34177746960543" stroke="#1f77b4" stroke-width="2"/>
+<line x1="51.0" y1="158.44801761241018" x2="61.0" y2="158.44801761241018" stroke="#1f77b4" stroke-width="2"/>
+<line x1="51.0" y1="109.34177746960543" x2="61.0" y2="109.34177746960543" stroke="#1f77b4" stroke-width="2"/>
+<circle cx="56.0" cy="133.8948975410078" r="5" fill="#1f77b4"/>
+<line x1="114.9090909090909" y1="147.89053831139918" x2="114.9090909090909" y2="101.47110964513098" stroke="#1f77b4" stroke-width="2"/>
+<line x1="109.9090909090909" y1="147.89053831139918" x2="119.9090909090909" y2="147.89053831139918" stroke="#1f77b4" stroke-width="2"/>
+<line x1="109.9090909090909" y1="101.47110964513098" x2="119.9090909090909" y2="101.47110964513098" stroke="#1f77b4" stroke-width="2"/>
+<circle cx="114.9090909090909" cy="124.6808239782651" r="5" fill="#1f77b4"/>
+<line x1="173.8181818181818" y1="138.05714041053994" x2="173.8181818181818" y2="96.03806004375781" stroke="#1f77b4" stroke-width="2"/>
+<line x1="168.8181818181818" y1="138.05714041053994" x2="178.8181818181818" y2="138.05714041053994" stroke="#1f77b4" stroke-width="2"/>
+<line x1="168.8181818181818" y1="96.03806004375781" x2="178.8181818181818" y2="96.03806004375781" stroke="#1f77b4" stroke-width="2"/>
+<circle cx="173.8181818181818" cy="117.04760022714888" r="5" fill="#1f77b4"/>
+<line x1="291.6363636363636" y1="121.48635927106622" x2="291.6363636363636" y2="89.73237478354184" stroke="#1f77b4" stroke-width="2"/>
+<line x1="286.6363636363636" y1="121.48635927106622" x2="296.6363636363636" y2="121.48635927106622" stroke="#1f77b4" stroke-width="2"/>
+<line x1="286.6363636363636" y1="89.73237478354184" x2="296.6363636363636" y2="89.73237478354184" stroke="#1f77b4" stroke-width="2"/>
+<circle cx="291.6363636363636" cy="105.60936702730402" r="5" fill="#1f77b4"/>
+<line x1="645.0909090909091" y1="96.30164212572788" x2="645.0909090909091" y2="84.0" stroke="#1f77b4" stroke-width="2"/>
+<line x1="640.0909090909091" y1="96.30164212572788" x2="650.0909090909091" y2="96.30164212572788" stroke="#1f77b4" stroke-width="2"/>
+<line x1="640.0909090909091" y1="84.0" x2="650.0909090909091" y2="84.0" stroke="#1f77b4" stroke-width="2"/>
+<circle cx="645.0909090909091" cy="90.150821062864" r="5" fill="#1f77b4"/>
+<text x="380.0" y="412" text-anchor="middle" font-size="12" fill="#444">beta (DiPOD)</text>
+<text x="14" y="210.0" text-anchor="middle" font-size="12" fill="#444" transform="rotate(-90 14 210.0)">final cos(proxy,true)</text>
+</svg>

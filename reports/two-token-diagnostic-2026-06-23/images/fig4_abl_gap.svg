@@ -1,0 +1,42 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg">
+<text x="380.0" y="22" text-anchor="middle" font-size="14" font-weight="600" fill="#333">beta vs gap(AA) [mean +/- std]</text>
+<line x1="56" y1="364" x2="704" y2="364" stroke="#555" stroke-width="1.5"/>
+<line x1="56" y1="56" x2="56" y2="364" stroke="#555" stroke-width="1.5"/>
+<text x="48" y="368.0" text-anchor="end" font-size="11" fill="#666">0.000</text>
+<line x1="56" y1="364.0" x2="704" y2="364.0" stroke="#eee" stroke-width="1"/>
+<text x="48" y="291.0" text-anchor="end" font-size="11" fill="#666">0.112</text>
+<line x1="56" y1="287.0" x2="704" y2="287.0" stroke="#eee" stroke-width="1"/>
+<text x="48" y="214.0" text-anchor="end" font-size="11" fill="#666">0.225</text>
+<line x1="56" y1="210.0" x2="704" y2="210.0" stroke="#eee" stroke-width="1"/>
+<text x="48" y="137.0" text-anchor="end" font-size="11" fill="#666">0.337</text>
+<line x1="56" y1="133.0" x2="704" y2="133.0" stroke="#eee" stroke-width="1"/>
+<text x="48" y="60.0" text-anchor="end" font-size="11" fill="#666">0.449</text>
+<line x1="56" y1="56.0" x2="704" y2="56.0" stroke="#eee" stroke-width="1"/>
+<text x="56.0" y="382" text-anchor="middle" font-size="11" fill="#666">0</text>
+<text x="114.9090909090909" y="382" text-anchor="middle" font-size="11" fill="#666">0.05</text>
+<text x="173.8181818181818" y="382" text-anchor="middle" font-size="11" fill="#666">0.1</text>
+<text x="291.6363636363636" y="382" text-anchor="middle" font-size="11" fill="#666">0.2</text>
+<text x="645.0909090909091" y="382" text-anchor="middle" font-size="11" fill="#666">0.5</text>
+<line x1="56.0" y1="437.7421235766572" x2="56.0" y2="84.0" stroke="#d62728" stroke-width="2"/>
+<line x1="51.0" y1="437.7421235766572" x2="61.0" y2="437.7421235766572" stroke="#d62728" stroke-width="2"/>
+<line x1="51.0" y1="84.0" x2="61.0" y2="84.0" stroke="#d62728" stroke-width="2"/>
+<circle cx="56.0" cy="260.87106178832863" r="5" fill="#d62728"/>
+<line x1="114.9090909090909" y1="431.1366827000055" x2="114.9090909090909" y2="147.32472686794142" stroke="#d62728" stroke-width="2"/>
+<line x1="109.9090909090909" y1="431.1366827000055" x2="119.9090909090909" y2="431.1366827000055" stroke="#d62728" stroke-width="2"/>
+<line x1="109.9090909090909" y1="147.32472686794142" x2="119.9090909090909" y2="147.32472686794142" stroke="#d62728" stroke-width="2"/>
+<circle cx="114.9090909090909" cy="289.23070478397347" r="5" fill="#d62728"/>
+<line x1="173.8181818181818" y1="421.36950240783005" x2="173.8181818181818" y2="193.75207460609053" stroke="#d62728" stroke-width="2"/>
+<line x1="168.8181818181818" y1="421.36950240783005" x2="178.8181818181818" y2="421.36950240783005" stroke="#d62728" stroke-width="2"/>
+<line x1="168.8181818181818" y1="193.75207460609053" x2="178.8181818181818" y2="193.75207460609053" stroke="#d62728" stroke-width="2"/>
+<circle cx="173.8181818181818" cy="307.56078850696025" r="5" fill="#d62728"/>
+<line x1="291.6363636363636" y1="403.5465106289712" x2="291.6363636363636" y2="255.11678930824846" stroke="#d62728" stroke-width="2"/>
+<line x1="286.6363636363636" y1="403.5465106289712" x2="296.6363636363636" y2="403.5465106289712" stroke="#d62728" stroke-width="2"/>
+<line x1="286.6363636363636" y1="255.11678930824846" x2="296.6363636363636" y2="255.11678930824846" stroke="#d62728" stroke-width="2"/>
+<circle cx="291.6363636363636" cy="329.33164996860984" r="5" fill="#d62728"/>
+<line x1="645.0909090909091" y1="377.16871140382176" x2="645.0909090909091" y2="327.49470435322206" stroke="#d62728" stroke-width="2"/>
+<line x1="640.0909090909091" y1="377.16871140382176" x2="650.0909090909091" y2="377.16871140382176" stroke="#d62728" stroke-width="2"/>
+<line x1="640.0909090909091" y1="327.49470435322206" x2="650.0909090909091" y2="327.49470435322206" stroke="#d62728" stroke-width="2"/>
+<circle cx="645.0909090909091" cy="352.3317078785219" r="5" fill="#d62728"/>
+<text x="380.0" y="412" text-anchor="middle" font-size="12" fill="#444">beta (DiPOD)</text>
+<text x="14" y="210.0" text-anchor="middle" font-size="12" fill="#444" transform="rotate(-90 14 210.0)">final gap(AA)</text>
+</svg>

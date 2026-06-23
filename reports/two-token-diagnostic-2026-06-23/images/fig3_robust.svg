@@ -1,0 +1,43 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg">
+<text x="380.0" y="22" text-anchor="middle" font-size="14" font-weight="600" fill="#333">DiPOD controls the gap below FPO across random rewards</text>
+<line x1="56" y1="364" x2="704" y2="364" stroke="#555" stroke-width="1.5"/>
+<line x1="56" y1="56" x2="56" y2="364" stroke="#555" stroke-width="1.5"/>
+<line x1="56.0" y1="364.0" x2="704.0" y2="56.0" stroke="#999" stroke-dasharray="5,4" stroke-width="1.5"/>
+<circle cx="74.87416621250577" cy="355.0289438417571" r="5" fill="#d62728" opacity="0.75"/>
+<circle cx="134.66044396387167" cy="351.099249982185" r="5" fill="#2ca02c" opacity="0.75"/>
+<circle cx="161.2905102039041" cy="329.35475163049745" r="5" fill="#2ca02c" opacity="0.75"/>
+<circle cx="74.87484595402535" cy="355.02395554271425" r="5" fill="#d62728" opacity="0.75"/>
+<circle cx="74.87500822159389" cy="355.0282990383505" r="5" fill="#d62728" opacity="0.75"/>
+<circle cx="646.8067078552516" cy="239.51440241955237" r="5" fill="#2ca02c" opacity="0.75"/>
+<circle cx="516.0236879311628" cy="291.5672605685562" r="5" fill="#2ca02c" opacity="0.75"/>
+<circle cx="74.87732560868562" cy="355.01521274754737" r="5" fill="#d62728" opacity="0.75"/>
+<circle cx="425.91206077242515" cy="281.7335324345752" r="5" fill="#2ca02c" opacity="0.75"/>
+<circle cx="122.85598538965085" cy="343.6881707430184" r="5" fill="#2ca02c" opacity="0.75"/>
+<circle cx="81.15169597134964" cy="354.48862496009343" r="5" fill="#2ca02c" opacity="0.75"/>
+<circle cx="442.9682777799324" cy="292.48402531273103" r="5" fill="#2ca02c" opacity="0.75"/>
+<circle cx="174.9095103522447" cy="331.51444266915126" r="5" fill="#2ca02c" opacity="0.75"/>
+<circle cx="74.87397963246694" cy="355.02909595822155" r="5" fill="#2ca02c" opacity="0.75"/>
+<circle cx="190.15023944394045" cy="337.0108835301745" r="5" fill="#2ca02c" opacity="0.75"/>
+<circle cx="82.81467810329292" cy="354.7572219995256" r="5" fill="#2ca02c" opacity="0.75"/>
+<circle cx="148.26356406280945" cy="349.9419029425795" r="5" fill="#2ca02c" opacity="0.75"/>
+<circle cx="159.18853672692651" cy="349.9976960320454" r="5" fill="#2ca02c" opacity="0.75"/>
+<circle cx="366.0266211201291" cy="300.7049241457866" r="5" fill="#2ca02c" opacity="0.75"/>
+<circle cx="112.8572623283312" cy="346.3408626471093" r="5" fill="#2ca02c" opacity="0.75"/>
+<text x="56.0" y="382" text-anchor="middle" font-size="11" fill="#666">-0.02</text>
+<text x="48" y="368.0" text-anchor="end" font-size="11" fill="#666">-0.02</text>
+<line x1="56" y1="364.0" x2="704" y2="364.0" stroke="#eee" stroke-width="1"/>
+<text x="218.0" y="382" text-anchor="middle" font-size="11" fill="#666">0.15</text>
+<text x="48" y="291.0" text-anchor="end" font-size="11" fill="#666">0.15</text>
+<line x1="56" y1="287.0" x2="704" y2="287.0" stroke="#eee" stroke-width="1"/>
+<text x="380.0" y="382" text-anchor="middle" font-size="11" fill="#666">0.33</text>
+<text x="48" y="214.0" text-anchor="end" font-size="11" fill="#666">0.33</text>
+<line x1="56" y1="210.0" x2="704" y2="210.0" stroke="#eee" stroke-width="1"/>
+<text x="542.0" y="382" text-anchor="middle" font-size="11" fill="#666">0.50</text>
+<text x="48" y="137.0" text-anchor="end" font-size="11" fill="#666">0.50</text>
+<line x1="56" y1="133.0" x2="704" y2="133.0" stroke="#eee" stroke-width="1"/>
+<text x="704.0" y="382" text-anchor="middle" font-size="11" fill="#666">0.67</text>
+<text x="48" y="60.0" text-anchor="end" font-size="11" fill="#666">0.67</text>
+<line x1="56" y1="56.0" x2="704" y2="56.0" stroke="#eee" stroke-width="1"/>
+<text x="380.0" y="412" text-anchor="middle" font-size="12" fill="#444">FPO final gap(AA)</text>
+<text x="14" y="210.0" text-anchor="middle" font-size="12" fill="#444" transform="rotate(-90 14 210.0)">DiPOD final gap(AA)</text>
+</svg>

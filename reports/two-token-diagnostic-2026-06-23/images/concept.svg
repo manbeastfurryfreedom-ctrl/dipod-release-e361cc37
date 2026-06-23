@@ -1,0 +1,22 @@
+<svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg">
+<text x="380" y="24" text-anchor="middle" font-size="14" font-weight="600" fill="#333">The Double Drift (DiPOD core claim)</text>
+<rect x="30" y="60" width="280" height="90" rx="10" fill="#fde" stroke="#d62728" stroke-width="2"/>
+<text x="170" y="85" text-anchor="middle" font-size="13" font-weight="600" fill="#222">1st Drift: ELBO drifts from log pi</text>
+<text x="170" y="108" text-anchor="middle" font-size="12" fill="#444">ELBO = log pi - D_L</text>
+<text x="170" y="128" text-anchor="middle" font-size="12" fill="#444">RL updates loosen D_L -&gt;</text>
+<text x="170" y="143" text-anchor="middle" font-size="12" fill="#444">ELBO no longer tracks likelihood</text>
+<path d="M 320 105 L 440 105" stroke="#333" stroke-width="2" marker-end="url(#a)"/>
+<rect x="450" y="60" width="280" height="90" rx="10" fill="#fef" stroke="#9467bd" stroke-width="2"/>
+<text x="590" y="85" text-anchor="middle" font-size="13" font-weight="600" fill="#222">2nd Drift: proxy grad drifts</text>
+<text x="590" y="108" text-anchor="middle" font-size="12" fill="#444">grad ELBO = grad log pi - grad D_L</text>
+<text x="590" y="128" text-anchor="middle" font-size="12" fill="#444">proxy PG misaligns from</text>
+<text x="590" y="143" text-anchor="middle" font-size="12" fill="#444">true policy gradient</text>
+<rect x="170" y="190" width="420" height="80" rx="10" fill="#e8f5e9" stroke="#2ca02c" stroke-width="2"/>
+<text x="380" y="215" text-anchor="middle" font-size="13" font-weight="600" fill="#2e7d32">DiPOD: keep the bound tight on-policy</text>
+<text x="380" y="238" text-anchor="middle" font-size="12" fill="#444">add beta * ELBO regularizer to each PG step</text>
+<text x="380" y="258" text-anchor="middle" font-size="12" fill="#444">-&gt; D_L stays small -&gt; proxy grad stays aligned</text>
+<path d="M 170 150 L 250 190" stroke="#2ca02c" stroke-width="2" marker-end="url(#ag)" stroke-dasharray="4,3"/>
+<path d="M 590 150 L 510 190" stroke="#2ca02c" stroke-width="2" marker-end="url(#ag)" stroke-dasharray="4,3"/>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#333"/></marker>
+<marker id="ag" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#2ca02c"/></marker></defs>
+</svg>
