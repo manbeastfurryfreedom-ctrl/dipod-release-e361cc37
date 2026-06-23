@@ -41,9 +41,8 @@ fi
 
 cd "$SCRIPT_DIR"
 
-echo "=== Training FPO vs FPO+DiPOD (paper Appendix D settings) ==="
-# Exact policy gradients (no Monte-Carlo) -> deterministic; one seed suffices.
-"$PY" train.py --steps 1500 --lr 0.1 --betas 0.0 0.2 --seeds 1 --outdir "$ARTDIR" \
+echo "=== Training: all three evidence axes (paper single, reward robustness, beta ablation) ==="
+"$PY" train.py --steps 1500 --lr 0.1 --n_rewards 20 --n_seeds 12 --outdir "$ARTDIR" \
   || { echo "FATAL: training failed"; exit 1; }
 
 if [ "$HAVE_MPL" = "1" ]; then
