@@ -1,4 +1,10 @@
+Openresearch sh autoresearch reproduction in https://github.com/manbeastfurryfreedom-ctrl/dipod-release-e361cc37/tree/orx/two-token-diffusion-diagnostic-minimal-repro-6e4dc9f9
+
+
 # DiPOD: Diffusion Policy Optimization without Drifting Apart
+
+
+
 
 This release includes the language experiments from the paper and the control motion-tracking experiments used to compare original FPO++ with FPO++ initialized by self-distillation.
 
