@@ -1,3 +1,133 @@
+# DiPOD-release — minimal reproduction evidence
+
+> Minimal CPU reproduction of **arXiv 2606.13795** (DiPOD), Section 4.1 / Appendix D.
+> A fully-enumerable 2-token masked-diffusion policy is RL-post-trained with **exact**
+> policy gradients (no Monte-Carlo). The paper's **double drift** is reproduced and
+> measured directly. **Verdict: REPRODUCED.**
+>
+> Full report with SVG charts: [`reports/two-token-diagnostic-2026-06-23/report.md`](reports/two-token-diagnostic-2026-06-23/report.md)
+> Runnable harness: [`twotoken/`](twotoken/) · Run: `019ef2a4-5220-7ad8-b405-114211c145af` (done)
+
+---
+
+```
+====================================================================
+THE DOUBLE DRIFT (DiPOD core claim)
+====================================================================
+
+  ELBO = log(pi) - D_L          (D_L >= 0 is the variational gap)
+
+       RL updates push reward       D_L grows (ELBO cheats)
+[tight at init]  ---------------->  ------------------------>
+   ELBO ~ log pi                      ELBO drifts from log pi
+         |                                      |
+         |  1st DRIFT                           v
+         v                            2nd DRIFT
+  grad(ELBO) ~ grad(log pi)    grad(ELBO) = grad(log pi) - grad(D_L)
+         |                                      |
+         v                                      v
+  proxy PG ~ true PG             proxy PG MISALIGNS from true PG
+
+--------------------------------------------------------------------
+DiPOD FIX:  add beta * ELBO regularizer to each PG step
+            -> keeps D_L small on-policy
+            -> proxy gradient stays aligned with true policy gradient
+====================================================================
+```
+
+## Axis 1 — Paper single run (Figure 2 reproduction)
+
+```
+FIG 1 - 1st drift: gap(AA) = log(pi) - ELBO  [FPO drifts UP]
+  0.237 |                                                      # #
+  0.220 |                                                  # #    
+  0.204 |                                              # #        
+  0.187 |                                            #            
+  0.170 |                                        # #              
+  0.153 |                                     ##                  
+  0.136 |                                   #                     
+  0.119 |                               # #                       
+  0.102 |                           # #                           
+  0.085 |                         #                               
+  0.068 |                     # #                                 
+  0.051 |                  ##               * ** * * * * * * * * *
+  0.034 |            # # # ** * * * * * * *                       
+  0.017 |* * * * * * * * *                                        
+  0.000 *---------------------------------------------------------
+                     0             375             750            1125            1500
+  Legend: #=FPO  *=DiPOD
+```
+
+```
+FIG 2 - 2nd drift: cos(proxy_PG, true_PG)  [FPO loses alignment]
+  1.000 ** * * * * * * * * ** * *                                 
+  0.989 |                  ##     * * * * * *                     
+  0.977 |                     # #             ** * * * * *        
+  0.966 |                         # #                      * * * *
+  0.955 |                             #                           
+  0.944 |                               # #                       
+  0.932 |                                   #                     
+  0.921 |                                     ##                  
+  0.910 |                                        #                
+  0.898 |                                          #              
+  0.887 |                                            # #          
+  0.876 |                                                #        
+  0.865 |                                                  # #    
+  0.853 |                                                      #  
+  0.842 +--------------------------------------------------------#
+                     0             375             750            1125            1500
+  Legend: #=FPO  *=DiPOD
+```
+
+| Method | final gap(AA) | final cos(proxy,true) | final reward |
+|---|---|---|---|
+| FPO (β=0) | 0.2375 | 0.8420 | 0.9733 |
+| FPO+DiPOD (β=0.2) | 0.0443 | 0.9615 | 0.9741 |
+
+## Axis 2 — Reward robustness (20 random rewards)
+
+```
+FIG 3 - Reward robustness: final gap(AA) per random reward (20 rewards)
+  reward  FPO    DiPOD   | bar (FPO=####  DiPOD=....)
+  r 0    0.000  0.000  |
+  r 1    0.064  0.009  |###
+  r 2    0.093  0.058  |####..
+  r 3    0.000  0.000  |
+  r 4    0.000  0.000  |
+  r 5    0.613  0.261  |##############################............
+  r 6    0.473  0.143  |#######################.......
+  r 7    0.000  0.000  |
+  r 8    0.376  0.165  |##################........
+  r 9    0.051  0.026  |##.
+  r10    0.007  0.001  |
+  r11    0.395  0.141  |###################......
+  r12    0.107  0.053  |#####..
+  r13    0.000  0.000  |
+  r14    0.124  0.041  |######.
+  r15    0.009  0.001  |
+  r16    0.079  0.011  |###
+  r17    0.090  0.011  |####
+  r18    0.312  0.123  |###############.....
+  r19    0.041  0.020  |#
+
+  DiPOD < FPO in 16/20 rewards
+```
+
+## Axis 3 — β-ablation (paper Appendix E.2, 12 seeds)
+
+```
+FIG 4 - Beta ablation: mean final gap(AA) and alignment vs beta
+   beta | gap(AA) mean+/-std      | align mean+/-std
+  ------+-------------------------+----------------------
+   0.0  | 0.1505 +/- 0.2581  ##################  | 0.8162 +/- 0.0871
+   0.05 | 0.1091 +/- 0.2071  #############       | 0.8489 +/- 0.0823
+   0.1  | 0.0823 +/- 0.1661  ##########          | 0.8760 +/- 0.0745
+   0.2  | 0.0506 +/- 0.1083  ######              | 0.9166 +/- 0.0563
+   0.5  | 0.0170 +/- 0.0362  ##                  | 0.9714 +/- 0.0218
+```
+
+---
+
 Openresearch sh autoresearch reproduction in https://github.com/manbeastfurryfreedom-ctrl/dipod-release-e361cc37/tree/orx/two-token-diffusion-diagnostic-minimal-repro-6e4dc9f9
 
 
