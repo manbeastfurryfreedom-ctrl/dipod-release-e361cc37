@@ -1,0 +1,127 @@
+=== environment ===
+pwd=/root/openresearch/runs/019ef277-9ae3-7255-956d-0363f348aeea  REPO_ROOT=/root/openresearch/runs/019ef277-9ae3-7255-956d-0363f348aeea
+Linux openresearch-run-019ef277 6.8.0-124-generic #124-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 13:00:45 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+python: /usr/bin/python3 (Python 3.12.3)
+Installing numpy (matplotlib best-effort) ...
+error: externally-managed-environment
+
+× This environment is externally managed
+╰─> To install Python packages system-wide, try apt install
+    python3-xyz, where xyz is the package you are trying to
+    install.
+    
+    If you wish to install a non-Debian-packaged Python package,
+    create a virtual environment using python3 -m venv path/to/venv.
+    Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make
+    sure you have python3-full installed.
+    
+    If you wish to install a non-Debian packaged Python application,
+    it may be easiest to use pipx install xyz, which will manage a
+    virtual environment for you. Make sure you have pipx installed.
+    
+    See /usr/share/doc/python3.12/README.venv for more information.
+
+note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
+hint: See PEP 668 for the detailed specification.
+Collecting numpy
+  Downloading numpy-2.5.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Collecting matplotlib
+  Downloading matplotlib-3.11.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (80 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.3/80.3 kB 7.9 MB/s eta 0:00:00
+Collecting contourpy>=1.0.1 (from matplotlib)
+  Downloading contourpy-1.3.3-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib)
+  Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib)
+  Downloading fonttools-4.63.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (118 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.7/118.7 kB 47.9 MB/s eta 0:00:00
+Collecting kiwisolver>=1.3.1 (from matplotlib)
+  Downloading kiwisolver-1.5.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.1 kB)
+Requirement already satisfied: packaging>=20.0 in /usr/lib/python3/dist-packages (from matplotlib) (24.0)
+Collecting pillow>=9 (from matplotlib)
+  Downloading pillow-12.2.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (8.8 kB)
+Requirement already satisfied: pyparsing>=3 in /usr/lib/python3/dist-packages (from matplotlib) (3.1.1)
+Collecting python-dateutil>=2.7 (from matplotlib)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Requirement already satisfied: six>=1.5 in /usr/lib/python3/dist-packages (from python-dateutil>=2.7->matplotlib) (1.16.0)
+Downloading numpy-2.5.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.7/16.7 MB 174.2 MB/s eta 0:00:00
+Downloading matplotlib-3.11.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (10.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.0/10.0 MB 182.6 MB/s eta 0:00:00
+Downloading contourpy-1.3.3-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (362 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 362.6/362.6 kB 114.3 MB/s eta 0:00:00
+Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading fonttools-4.63.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.0/5.0 MB 201.7 MB/s eta 0:00:00
+Downloading kiwisolver-1.5.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 188.7 MB/s eta 0:00:00
+Downloading pillow-12.2.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 178.4 MB/s eta 0:00:00
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 58.0 MB/s eta 0:00:00
+Installing collected packages: python-dateutil, pillow, numpy, kiwisolver, fonttools, cycler, contourpy, matplotlib
+Successfully installed contourpy-1.3.3 cycler-0.12.1 fonttools-4.63.0 kiwisolver-1.5.0 matplotlib-3.11.0 numpy-2.5.0 pillow-12.2.0 python-dateutil-2.9.0.post0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+error: externally-managed-environment
+
+× This environment is externally managed
+╰─> To install Python packages system-wide, try apt install
+    python3-xyz, where xyz is the package you are trying to
+    install.
+    
+    If you wish to install a non-Debian-packaged Python package,
+    create a virtual environment using python3 -m venv path/to/venv.
+    Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make
+    sure you have python3-full installed.
+    
+    If you wish to install a non-Debian packaged Python application,
+    it may be easiest to use pipx install xyz, which will manage a
+    virtual environment for you. Make sure you have pipx installed.
+    
+    See /usr/share/doc/python3.12/README.venv for more information.
+
+note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
+hint: See PEP 668 for the detailed specification.
+Requirement already satisfied: numpy in /usr/local/lib/python3.12/dist-packages (2.5.0)
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+numpy 2.5.0
+matplotlib 3.11.0
+=== Training FPO vs FPO+DiPOD (paper Appendix D settings) ===
+wrote /root/openresearch/runs/019ef277-9ae3-7255-956d-0363f348aeea/.openresearch/artifacts/history.json
+  beta=0.0  final gap_AA=0.2375  peak gap_AA=0.2375  final reward=0.9733
+  beta=0.2  final gap_AA=0.0443  peak gap_AA=0.0443  final reward=0.9741
+=== Plotting ===
+wrote /root/openresearch/runs/019ef277-9ae3-7255-956d-0363f348aeea/.openresearch/artifacts/twotoken_diagnostic.png
+=== Writing EVAL.md ===
+# EVAL — Two-token diffusion diagnostic (DiPOD minimal repro)
+
+Minimal CPU reproduction of the DiPOD paper's controlled diagnostic (Section 4.1 / Appendix D, following SPG's two-token toy setting). A fully-enumerable 2-token masked-diffusion policy (6 logits a..f, init 0 so ELBO = log pi at start) is RL-post-trained with **exact** policy gradients (no Monte-Carlo, as the paper specifies). True log-likelihood, ELBO, and the gap `D^L = log pi - ELBO` are computed in closed form, matching the paper's worked example for AA.
+
+Methods: **FPO** (policy gradient on the ELBO score, paper Eq. 4) vs **FPO+DiPOD** (same + `beta * ELBO` on-policy regulariser, paper Algorithm 2 — the same term as `language/d1/diffu-grpo/diffu_grpo_trainer.py:160`). Reward r(AA)=0.8, r(AB)=1, r(BA)=0.7, r(BB)=1; lr=0.1; beta_DiPOD=0.2; 1500 steps (all per Appendix D).
+
+## Core claim under test
+
+Under FPO the ELBO–likelihood discrepancy (tracked on **AA**, the paper's Fig. 2) **drifts up** as RL proceeds. DiPOD keeps it **controlled** while still improving reward.
+
+## Results
+
+| Method | init gap(AA) | final gap(AA) | peak gap(AA) | final mean gap | final reward |
+|---|---|---|---|---|---|
+| FPO (beta=0) | 0.0000 | 0.2375 | 0.2375 | 0.0291 | 0.9733 |
+| FPO+DiPOD (beta=0.2) | 0.0000 | 0.0443 | 0.0443 | 0.0059 | 0.9741 |
+
+## Verdict
+
+**REPRODUCED** — FPO discrepancy on AA drifts 0.0000 -> 0.2375 over training (the *double drift*); FPO+DiPOD (beta=0.2) holds it at 0.0443 -- **5.4x smaller** -- while reward is comparable (0.9741 vs FPO 0.9733). This matches the paper's Figure 2.
+
+![diagnostic](.openresearch/artifacts/twotoken_diagnostic.png)
+
+
+wrote /root/openresearch/runs/019ef277-9ae3-7255-956d-0363f348aeea/EVAL.md
+=== Done. Artifacts in /root/openresearch/runs/019ef277-9ae3-7255-956d-0363f348aeea/.openresearch/artifacts ===
+total 908
+drwxr-xr-x 2 root root   4096 Jun 23 03:15 .
+drwxr-xr-x 4 root root   4096 Jun 23 03:15 ..
+-rw-r--r-- 1 root root 763329 Jun 23 03:15 history.json
+-rw-r--r-- 1 root root   9130 Jun 23 03:15 run.log
+-rw-r--r-- 1 root root 139341 Jun 23 03:15 twotoken_diagnostic.png
